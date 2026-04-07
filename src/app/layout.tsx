@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito, Playfair_Display } from "next/font/google";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -77,8 +78,15 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/logo.jpeg" />
+        <meta
+          name="google-site-verification"
+          content="u-k_PNPWnoWA75cfu6v03IJK_ebirXyZuxReXSwUGYc"
+        />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }

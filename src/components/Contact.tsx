@@ -30,7 +30,7 @@ export function Contact() {
                 </svg>
               </div>
               <h3 className="text-cream font-bold mb-1">Email</h3>
-              <p className="text-cream-dark/70">hello@mad-dog-grooming.com</p>
+              <p className="text-cream-dark/70">madalyn@mad-dog-grooming.com</p>
             </div>
 
             <div className="rounded-2xl bg-brown-light/50 p-6 border border-gold-light/10">
@@ -46,7 +46,7 @@ export function Contact() {
           </div>
 
           <a
-            href="mailto:hello@mad-dog-grooming.com"
+            href="mailto:madalyn@mad-dog-grooming.com"
             className="inline-block rounded-full bg-gold px-10 py-4 text-lg font-bold text-white shadow-lg hover:bg-gold-dark hover:shadow-xl transition-all"
           >
             Contact Us to Book

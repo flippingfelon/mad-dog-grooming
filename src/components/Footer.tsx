@@ -1,5 +1,16 @@
 import Image from "next/image";
 
+const socialLinks = [
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/mad_doggrooming/",
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/mad.dog.grooming.2023/",
+  },
+];
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -33,7 +44,20 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-cream-dark/10 text-center">
+        <div className="mt-8 pt-6 border-t border-cream-dark/10 text-center space-y-3">
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream-dark/60 text-sm hover:text-gold-light transition-colors"
+              >
+                {social.name}
+              </a>
+            ))}
+          </div>
           <p className="text-cream-dark/40 text-xs">
             Professional dog grooming in Portland, Oregon. Serving the greater Portland metro area.
           </p>

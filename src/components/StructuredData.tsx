@@ -1,3 +1,8 @@
+const socialProfiles = [
+  "https://www.instagram.com/mad_doggrooming/",
+  "https://www.facebook.com/mad.dog.grooming.2023/",
+];
+
 export function StructuredData() {
   const localBusiness = {
     "@context": "https://schema.org",
@@ -42,7 +47,8 @@ export function StructuredData() {
       opens: "09:00",
       closes: "17:00",
     },
-    sameAs: [],
+    email: "madalyn@mad-dog-grooming.com",
+    sameAs: socialProfiles,
   };
 
   const faqSchema = {
@@ -122,6 +128,7 @@ export function StructuredData() {
         "@type": "ImageObject",
         url: "https://mad-dog-grooming.com/logo.jpeg",
       },
+      sameAs: socialProfiles,
     },
   };
 
